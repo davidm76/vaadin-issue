@@ -225,3 +225,14 @@ Yuo get the following response back:
 };	config.uidl = uidl;    window.Vaadin.Flow.initApplication("ROOT-2521314", config);})();//]]></script><script type="text/javascript" defer src="./VAADIN/static/client/client-63F60563F27F9CAB0329071E83FEC419.cache.js"></script></head><body><noscript>You have to enable javascript in your browser to use this web site.</noscript></body></html>
 
 ```
+
+
+Also,  if you post a large file, you get thre following response:
+
+```bash
+
+
+http -f POST :8080/import file@~/WPC/full/OSM.mbtiles.gz
+
+http: error: ConnectionError: ('Connection aborted.', BrokenPipeError(32, 'Broken pipe')) while doing POST request to URL: http://localhost:8080/import
+```
